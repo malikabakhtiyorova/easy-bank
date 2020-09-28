@@ -1,37 +1,48 @@
 .sitenav {
-  background-color: #fff;
-  border-radius: $global-radius;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .sitenav__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  margin: 0;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sitenav__item {
-  flex-grow: 1;
-  border: 1px solid #000;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 30px;
 }
 
-.sitenav__link {
+.sitenav__item a {
+  padding: 25px 10px;
   display: block;
-  padding: 5px;
   text-decoration: none;
-  text-align: center;
+  color: #9597A5;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: -0.107692px;
+}
 
-  &::before {
-    content: "Birnima";
-  }
+.sitenav__item::after {
+  display: block;
+  background-image: $btn-color;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  content: "";
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
 
-  &:hover {
-    background-color: gold;
-  }
-
-  &:hover::before {
-    transform: rotate(45deg);
-  }
+.sitenav__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left 0;
 }
