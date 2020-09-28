@@ -1,0 +1,24 @@
+// BUNDAY USULDA KOD YOZMAYMIZ! NEIN! YO'Q! NET! LAA!
+
+%reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__list {
+  @extend %reset-list;
+}
+
+.contacts__list {
+  @extend %reset-list;
+}
+
+.socials__list {
+  @extend %reset-list;
+  padding: 15px;
+}
+
+// .palonchi {
+//   border-radius: $global-radius;
+// }
