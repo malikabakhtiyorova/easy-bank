@@ -15,7 +15,6 @@
 }
 
 .sitenav__item {
-  overflow: hidden;
   text-align: center;
   margin-right: 30px;
 }
@@ -45,4 +44,17 @@
 .sitenav__item:hover::after {
   transform: scaleX(1);
   transform-origin: left 0;
+}
+
+@media only screen and (max-width:400px) {
+  .sitenav__list a {
+    padding: 10px;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .sitenav__list {
+    padding: 15px 0;
+  }
 }

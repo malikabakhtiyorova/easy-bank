@@ -2,17 +2,13 @@
   background-color: #fff;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header__wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .hamburger {
@@ -34,11 +30,8 @@
   }
 
   .hamburger {
-    padding: 10px;
-  }
-
-  .header__btn {
-    position: none;
+    padding: 15px 10px;
+    padding-bottom: 20px;
   }
 
   .hamburger {
@@ -46,19 +39,43 @@
   }
 
   .sitenav-open {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
     padding: 50px 30px;
     display: block;
-    position: absolute;
-    // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
-    background-color: black;
-    height: 100vh - 50px;
-    top: 100%;
+    height: calc(100vh - 130px);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     left: 0;
+    top: 50px;
   }
 
   .sitenav__list {
     background-color: #fff;
+    border-radius: 5px;
+    flex-direction: column;
+    // min-height: 350px;
+  }
+
+
+  .sitenav__item a {
+    display: block;
+  }
+
+  .header .main__btn {
+    display: none;
+  }
+
+  .hamburger {
+    background-image: url("../img/hamburger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 15px;
+  }
+
+  .hambuger-opened {
+    background-image: url("../img/Group (1).svg");
   }
 
 }
-

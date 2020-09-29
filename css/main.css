@@ -377,6 +377,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #f2f2f2;
+  margin-top: 70px;
 }
 
 img {
@@ -407,6 +408,7 @@ img {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .header__wrapper {
@@ -419,15 +421,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hamburger {
@@ -448,26 +441,47 @@ img {
     margin: 15px;
   }
   .hamburger {
-    padding: 10px;
-  }
-  .header__btn {
-    position: none;
+    padding: 15px 10px;
+    padding-bottom: 20px;
   }
   .hamburger {
     display: block;
   }
   .sitenav-open {
-    padding-top: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    padding: 50px 30px;
     display: block;
-    position: absolute;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(to bottom rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
-    height: 100vh;
-    top: 100%;
+    height: calc(100vh - 130px);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     left: 0;
+    top: 50px;
   }
   .sitenav__list {
     background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sitenav__item a {
+    display: block;
+  }
+  .header .main__btn {
+    display: none;
+  }
+  .hamburger {
+    background-image: url("../img/hamburger.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 15px;
+  }
+  .hambuger-opened {
+    background-image: url("../img/Group (1).svg");
   }
 }
 
@@ -481,8 +495,8 @@ img {
   display: block;
 }
 
-.header__btn {
-  display: block;
+.main__btn {
+  display: inline-block;
   text-decoration: none;
   margin-left: auto;
   font-weight: 500;
@@ -494,7 +508,7 @@ img {
   border-radius: 25px;
 }
 
-.header__btn:hover {
+.main__btn:hover {
   opacity: 0.5;
 }
 
@@ -522,7 +536,6 @@ img {
 }
 
 .sitenav__item {
-  overflow: hidden;
   text-align: center;
   margin-right: 30px;
 }
@@ -558,5 +571,17 @@ img {
           transform: scaleX(1);
   -webkit-transform-origin: left 0;
           transform-origin: left 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .sitenav__list a {
+    padding: 10px;
+    color: #2D314D;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .sitenav__list {
+    padding: 15px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

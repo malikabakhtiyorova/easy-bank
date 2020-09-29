@@ -1,5 +1,5 @@
-.header__btn {
-  display: block;
+.main__btn {
+  display: inline-block;
   text-decoration: none;
   margin-left: auto;
   font-weight: 500;
@@ -11,6 +11,6 @@
   border-radius: $global-radius;
 }
 
-.header__btn:hover {
+.main__btn:hover {
   opacity: 0.5;
 }
