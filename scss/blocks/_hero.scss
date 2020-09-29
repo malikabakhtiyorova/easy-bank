@@ -1,3 +1,49 @@
-.hero__container {
+.hero {
   display: flex;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.hero__content {
+  padding-left: 115px;
+}
+
+.hero__content {
+  max-width: 490px;
+  padding-top: 130px;
+  padding-bottom: 200px
+}
+
+.hero__heading {
+  font-size: 50px;
+  line-height: 64px;
+  color: #2D314D;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.hero__img {
+  position: absolute;
+}
+
+.hero__text {
+  max-width: 490px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #9597A5;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.hero__img {
+  // margin-top: -30px;
+  right: 0;
+  // width: 60%;
+  // max-height: 800px;
+  max-width: 800px;
+  top: -13%;
+  z-index: 1;
+  display: block;
+  object-fit: cover;
+  position: absolute;
 }
