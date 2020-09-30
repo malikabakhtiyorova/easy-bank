@@ -18,26 +18,81 @@
   border: none;
 }
 
-.hamburger__img {
-  display: block;
-}
+// .hamburger__img {
+//   display: block;
+// }
 
-@media only screen and (max-width:357px) {
+// @media only screen and (max-width:810px)  {
+//   .logo {
+//     padding: 15px;
+//   }
+
+//   .hamburger {
+//     display: block;
+//   }
+
+//   .hamburger {
+//     padding: 15px 10px;
+//     padding-bottom: 20px;
+//   }
+
+//   .sitenav-open {
+//     position: fixed;
+//     width: 100%;
+//     z-index: 20;
+//     padding: 50px 30px;
+//     display: block;
+//     height: calc(100vh - 130px);
+//     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+//     left: 0;
+//     top: 65px;
+//   }
+
+//   .sitenav__list {
+//     display: none;
+//     background-color: #fff;
+//     border-radius: 5px;
+//     flex-direction: column;
+//     max-width: 300px;
+//   }
+
+
+//   .sitenav__item a {
+//     display: block;
+//     margin-right: 15px;
+//   }
+
+//   .hamburger {
+//     background-image: url("../img/hamburger.png");
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center center;
+//     padding: 15px;
+//   }
+
+//   .hamburger-open {
+//     background-image: url("../img/Group (1).svg");
+//   }
+
+//   .hambuger-opened {
+//     background-image: url("../img/Group (1).svg");
+//   }
+
+// }
+
+
+@media only screen and (max-width:810px) {
   .sitenav {
     display: none;
   }
   .logo {
-    margin: 15px;
+    padding: 15px;
   }
 
-  .hamburger {
-    padding: 15px 10px;
-    padding-bottom: 20px;
+  .hamburger:hover {
+    box-shadow: 0px 0px 5px rgba($color: rgb(70, 69, 69), $alpha: .5);
   }
 
-  .hamburger {
-    display: block;
-  }
 
   .sitenav-open {
     position: fixed;
@@ -48,7 +103,7 @@
     height: calc(100vh - 130px);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     left: 0;
-    top: 50px;
+    top: 65px;
   }
 
   .sitenav__list {
@@ -64,13 +119,17 @@
   }
 
   .header .main__btn {
-    display: none;
+    margin-right: 30px;
   }
 
   .hamburger {
+    padding: 15px 10px;
+    padding-bottom: 20px;
+    outline: none;
+    display: block;
     background-image: url("../img/hamburger.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
     background-position: center center;
     padding: 15px;
   }
