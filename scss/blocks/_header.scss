@@ -55,7 +55,7 @@
     background-color: #fff;
     border-radius: 5px;
     flex-direction: column;
-    // min-height: 350px;
+    max-width: 300px;
   }
 
 
@@ -73,6 +73,10 @@
     background-size: contain;
     background-position: center center;
     padding: 15px;
+  }
+
+  .hamburger-open {
+    background-image: url("../img/Group (1).svg");
   }
 
   .hambuger-opened {
